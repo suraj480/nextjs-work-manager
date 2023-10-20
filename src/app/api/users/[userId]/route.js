@@ -1,12 +1,21 @@
+import { User } from "@/models/user";
 import { NextResponse } from "next/server";
 //DELETE request function
-export function DELETE(request,{params}) {
-    console.log(params)
-    const {userId} = params
-    console.log(userId)
-    console.log("delete api called")
+export async function DELETE(request, { params }) {
+  console.log(params);
+  const { userId } = params;
+  try {
+    await User.deleteOne({
+      _id: userId,
+    });
     return NextResponse.json({
-      message:"Testing delete",
-      status:true
-    })
+      message: "Selected user deleted !!",
+      success: true,
+    });
+  } catch (error) {
+    return NextResponse.json({
+      message: "Error in deleting user",
+      success: false,
+    });
   }
+}
