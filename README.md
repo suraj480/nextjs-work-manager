@@ -24,5 +24,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/3f75dbd1-e30d-40f9-b3dd-5f200cc0156c)
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/f3049cc9-3284-4ba7-9135-fd26a48bb53b)
 
+## Get All users
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/10b3ee90-3e87-4511-b585-6b7f1d874821)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/0c53cbce-26c2-4fcd-89d9-0d96deb3767b)
+
+
 
 
