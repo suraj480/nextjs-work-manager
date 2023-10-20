@@ -37,3 +37,27 @@ export async function DELETE(request, { params }) {
     });
   }
 }
+
+//update user
+export async function PUT(request, { params }) {
+  const { userId } = params;
+  const { name, password, about, profileURL } = await request.json();
+  try {
+    const user = await User.findById(userId);
+    user.name = name;
+    user.password = password;
+    user.about = about;
+    user.profileURL = profileURL;
+    const updatedUser =await user.save()
+    return NextResponse.json(updatedUser,{
+      message:"user updated successfuly",
+      success:true
+    })
+  } catch (error) {
+
+    return NextResponse.json({
+      message: "Error in updating user",
+      success: false,
+    });
+  }
+}
