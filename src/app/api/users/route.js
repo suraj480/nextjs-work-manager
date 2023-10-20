@@ -3,13 +3,18 @@ import { User } from "@/models/user";
 import { NextResponse } from "next/server";
 
 connectDb();
-//GET request function
-export function GET(request) {
-  const users = [
-    { name: "suraj maurya", phone: "234", course: "next" },
-    { name: "ritul mohanty", phone: "9393", course: "java" },
-    { name: "poorna panda", phone: "12345", course: "react" },
-  ];
+//Get All users
+export async function GET(request) {
+let users=[];
+try{
+users=await User.find()
+}catch(error){
+  return NextResponse.json({
+    message:"failed to get users",
+    success:false
+  })
+console.log(error)
+}
   return NextResponse.json(users);
 }
 
@@ -47,12 +52,3 @@ export async function POST(request) {
   }
 }
 
-//DELETE request function
-export function DELETE(request) {
-  console.log("delete api called");
-  return NextResponse.json({
-    message: "deleted !!",
-    status: true,
-  });
-}
-export function PUT() {}
