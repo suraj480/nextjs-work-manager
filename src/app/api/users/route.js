@@ -1,4 +1,5 @@
 import { connectDb } from "@/helper/db";
+import { User } from "@/models/user";
 import { NextResponse } from "next/server";
 
 connectDb();
@@ -13,23 +14,45 @@ export function GET(request) {
 }
 
 //POST request function
-export  async  function POST(request) {
-  const body=request.body
-  console.log(body)
-  const jsonData = await request.json();
-  console.log(jsonData);
-
-  return NextResponse.json({
-    message:"posting user data"
-  })
+//Create user
+export async function POST(request) {
+  //fetch user details from  request
+  const { name, email, password, about, profileURL } = await request.json();
+  console.log({ name, email, password, about, profileURL });
+  //create user object with user model
+  const user = new User({
+    name,
+    email,
+    password,
+    about,
+    profileURL,
+  });
+  console.log(name, email, password, about, profileURL);
+  try {
+    //save the object to database
+    const createdUser = await user.save();
+    const response = NextResponse.json(user, {
+      status: 201,
+    });
+    return response;
+  } catch (error) {
+    console.log("hit me",error);
+    console.log(name, email, password, about, profileURL);
+    return NextResponse.json({
+      message: "Failed to create user !!",
+      status: false
+    } ,{
+      status: 500,
+    });
+  }
 }
 
 //DELETE request function
 export function DELETE(request) {
-  console.log("delete api called")
+  console.log("delete api called");
   return NextResponse.json({
-    message:"deleted !!",
-    status:true
-  })
+    message: "deleted !!",
+    status: true,
+  });
 }
 export function PUT() {}
