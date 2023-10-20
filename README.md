@@ -33,6 +33,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/81f853f6-2d51-444d-bf5b-db0ef279e044)
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/2045c949-6f2a-4bc8-91fd-243a6d2c8165)
 
+## Get single user
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/fb575670-2fe7-4206-9602-251e6efff246)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/7add57d3-d867-4ae1-91b2-ab75f72ab9ce)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/480c1357-9917-4d77-beca-f375b7cca440)
+
+
+
+
+
 
 
 
