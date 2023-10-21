@@ -15,5 +15,38 @@ export async function GET(request, { params }) {
   }
 }
 
-export async function PUT() {}
-export async function DELETE() {}
+//update task
+export async function PUT(request, { params }) {
+  const { tasksId } = params;
+  try {
+    const { title, content, status } = await request.json();
+    let task = await Task.findById(tasksId);
+
+    task.title = title;
+    task.content = content;
+    task.status = status;
+    const updatedTask = await task.save();
+    return NextResponse.json(
+      updatedTask,
+      getResponseMessage("task updated successfully", 201, true)
+    );
+  } catch (error) {
+    getResponseMessage("Error in updating task", 404, false);
+  }
+}
+
+//delete task
+export async function DELETE(request, { params }) {
+  const { tasksId } = params;
+  try {
+    await Task.deleteOne({
+      _id: tasksId,
+    });
+    return NextResponse.json({
+      message: "Selected task deleted !!",
+      success: true,
+    });
+  } catch (error) {
+    getResponseMessage("Error in deleting task", 404, false);
+  }
+}
