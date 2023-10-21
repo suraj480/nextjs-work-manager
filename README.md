@@ -77,6 +77,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Delete task
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/3ae5968e-157c-40e0-b2ba-5e5a34e886da)
 
+### Get task of single user
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/59249a4e-5769-47ac-955d-6dca15204926)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/8c1142ec-e5ee-4de2-a56b-23aee07e2fc0)
+
+
 
 
 
