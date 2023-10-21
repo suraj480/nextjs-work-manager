@@ -43,6 +43,23 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/0d8a9074-c77b-4044-ab4b-64f078ee0846)
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/cc5bca52-b290-4de6-b325-8c78c9bc8deb)
 
+# TASK API DEVELOPMENT
+## create task
+### steps for creating API
+#### 1.create task model
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/65d389d3-31cf-494a-a453-f15249c75755)
+#### 2. creat route for api
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/f4f1a1eb-33b1-450e-9ab6-4f02b849693c)
+#### 3. hit api from postman
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/7088d290-64b2-4240-93c4-3179a963e0b4)
+#### 4. check in db task is created
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/0eb62d2b-c685-4fc6-8b92-76edb621bfbc)
+
+
+
+
+
+
 
 
 
