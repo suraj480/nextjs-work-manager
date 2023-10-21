@@ -55,6 +55,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 #### 4. check in db task is created
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/0eb62d2b-c685-4fc6-8b92-76edb621bfbc)
 
+## Get all task ***and create common response message function***
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/0866b171-8ea0-47e6-bb2e-061cab218302)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/e5a30293-bb2b-4709-8ee8-0a202518e8a6)
+
+### hit postman get request
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/f6008c9d-d565-48c2-a8bc-55d3738b7fcb)
+
+
+
+
 
 
 
