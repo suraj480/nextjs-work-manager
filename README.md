@@ -69,6 +69,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/e9e935c8-3585-466c-a4ac-05a609d2681d)
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/7ac5a923-9b17-49b7-a5fc-0d36a0004035)
 
+## Update and delete task
+### Update task
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/df4c5073-8b7f-4c02-b373-47f202643ec8)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/01047a34-ece9-443c-98ec-5bfd29382a6a)
+
+### Delete task
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/3ae5968e-157c-40e0-b2ba-5e5a34e886da)
+
+
+
+
 
 
 
