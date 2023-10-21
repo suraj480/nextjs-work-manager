@@ -1,8 +1,20 @@
+import { getResponseMessage } from "@/helper/responseMessage";
 import { Task } from "@/models/task";
 import { NextResponse } from "next/server";
 
 //Get all the task
-export async function GET() {}
+export async function GET(request) {
+  try {
+    const tasks = await Task.find();
+    return NextResponse.json(
+      tasks,
+      getResponseMessage("taks fetched successfully !!", 200, true)
+    );
+  } catch (error) {
+    console.log(error);
+    return getResponseMessage("Error in getting data !!", 404, false);
+  }
+}
 //create all the task
 export async function POST(request) {
   const { title, content, userId } = await request.json();
