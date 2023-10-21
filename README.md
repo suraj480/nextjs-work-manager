@@ -62,6 +62,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### hit postman get request
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/f6008c9d-d565-48c2-a8bc-55d3738b7fcb)
 
+##Get single task
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/68c4f0d8-b417-48d8-ba13-114de80ea1ff)
+
+### hit postman get request with task id
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/e9e935c8-3585-466c-a4ac-05a609d2681d)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/7ac5a923-9b17-49b7-a5fc-0d36a0004035)
+
+
+
+
 
 
 
