@@ -81,6 +81,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/59249a4e-5769-47ac-955d-6dca15204926)
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/8c1142ec-e5ee-4de2-a56b-23aee07e2fc0)
 
+# Front-End Development
+### Client side and server side rendering:-
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/32b86aff-d1b6-4ce9-b592-634f0ab96738)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/b0160147-cb1f-4659-8091-99c7df8d9706)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/20513556-0a93-479a-9664-886aade6c855)
+
+
+
+
 
 
 
