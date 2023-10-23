@@ -1,8 +1,31 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import loginpage from "../../assets/loginpage.svg";
 import Image from "next/image";
+import { toast } from "react-toastify";
 const LoginPage = () => {
+  const [loginData, setLoginData] = useState({
+    email: "",
+    password: "",
+  });
+  const clearAll = () => {
+    setLoginData({ email: "", password: "" });
+  };
+  const loginFormSubmitted = (event) => {
+    event.preventDefault();
+    if (loginData.email.trim() === "" || loginData.email == null) {
+      toast.warning("Email is required !!", {
+        position: "top-center",
+      });
+      return;
+    }
+    if (loginData.password.trim() === "" || loginData.password == null) {
+      toast.warning("Password is required !!", {
+        position: "top-center",
+      });
+      return;
+    }
+  };
   return (
     <div className="grid grid-cols-12">
       <div className="col-span-4 col-start-5 shadow-sm bg-orange-50">
@@ -19,7 +42,7 @@ const LoginPage = () => {
 
         <div>
           <h1 className="text-3xl text-center">Login Here</h1>
-          <form action="#!" className="mt-5">
+          <form action="#!" className="mt-5" onSubmit={loginFormSubmitted}>
             {/* email */}
             <div className="mt-3">
               <label
@@ -33,6 +56,13 @@ const LoginPage = () => {
                 placeholder="Enter here"
                 id="user_email"
                 className="w-full p-3 rounded-3xl bg-gray-300 focus:ring-gray-400-100 border border-gray-800"
+                onChange={(event) => {
+                  setLoginData({
+                    ...loginData,
+                    email: event.target.value,
+                  });
+                }}
+                value={loginData.email}
               />
             </div>
             {/* Password */}
@@ -48,17 +78,28 @@ const LoginPage = () => {
                 placeholder="Enter here"
                 id="user_password"
                 className="w-full p-3 rounded-3xl bg-gray-300 focus:ring-gray-400-100 border border-gray-800"
+                onChange={(event) => {
+                  setLoginData({
+                    ...loginData,
+                    password: event.target.value,
+                  });
+                }}
+                value={loginData.password}
               />
             </div>
+            <div className="mt-3 flex justify-center">
+              <button className="bg-green-200 py-2 px-3 hover:bg-orange-300">
+                Login
+              </button>
+              <button
+                type="button"
+                onClick={clearAll}
+                className="bg-red-600 py-2 px-3 hover:bg-red-800 ms-3"
+              >
+                Reset
+              </button>
+            </div>
           </form>
-          <div className="mt-3 flex justify-center">
-            <button className="bg-green-200 py-2 px-3 hover:bg-orange-300">
-              Login
-            </button>
-            <button className="bg-red-600 py-2 px-3 hover:bg-red-800 ms-3">
-              Reset
-            </button>
-          </div>
         </div>
       </div>
     </div>
