@@ -87,6 +87,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/b0160147-cb1f-4659-8091-99c7df8d9706)
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/20513556-0a93-479a-9664-886aade6c855)
 
+### Front-End API development
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/1fa31c15-9314-4b47-a279-76d47c4af253)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/6516e61d-7dde-4c1e-9473-945f97216ee5)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/7aeeb558-c8a8-480b-916e-bf4265df671d)
+
+
+
+
+
 
 
 
