@@ -29,7 +29,8 @@ export async function POST(request) {
         const response = getResponseMessage("Successfully logedIn", 201, true);
         response.cookies.set("authToken", token, {
           expiresIn: "1d",
-          //httpOnly:false
+          //if you want to check from postman make httpOnly false
+          httpOnly: true,
         });
         return response;
       }

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import loginpage from "../../assets/loginpage.svg";
 import Image from "next/image";
 import { toast } from "react-toastify";
+import { login } from "@/services/userService";
 const LoginPage = () => {
   const [loginData, setLoginData] = useState({
     email: "",
@@ -11,7 +12,7 @@ const LoginPage = () => {
   const clearAll = () => {
     setLoginData({ email: "", password: "" });
   };
-  const loginFormSubmitted = (event) => {
+  const loginFormSubmitted = async (event) => {
     event.preventDefault();
     if (loginData.email.trim() === "" || loginData.email == null) {
       toast.warning("Email is required !!", {
@@ -24,6 +25,17 @@ const LoginPage = () => {
         position: "top-center",
       });
       return;
+    }
+    try {
+      const result = await login(loginData);
+      console.log("RESULT", result);
+      toast.success("LoginIn successful", {
+        position: "top-center",
+      });
+    } catch (error) {
+      toast.error("Error in Login", {
+        position: "top-center",
+      });
     }
   };
   return (
