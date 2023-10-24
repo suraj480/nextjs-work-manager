@@ -157,6 +157,27 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## wrap main layout.js with UserProvider
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/2ec5e507-0d38-46d2-9134-1d21a5c20d58)
 
+# Logout API
+## create route.js
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/7840946e-18d6-47af-a454-d78639691bb4)
+
+## create userService
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/1ea75eaa-c2fc-4301-a689-ff7552bf0285)
+
+## call service to frontend in cusomNavbar.jsx
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/10446899-0e0b-4198-aa4a-f2dedf9e657a)
+
+## Below function is written to deal with refresh situation after logout if we refresh that for few seconds logged in UI displayed
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/882eb281-2a3d-4d9c-b8e3-d7f7e9ee79b6)
+
+## To display user name after logged 
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/1d3cbb92-cbdd-4c36-9367-b2a2f3505a9d)
+
+
+
+
+
+
 
 
 
