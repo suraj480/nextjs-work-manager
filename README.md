@@ -127,6 +127,25 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/11154c04-4cdf-4070-9dab-bd4c121c9ea6)
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/d751a995-db01-4bfa-a074-4292575ac4a3)
 
+## Adding routing after login is successful
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/c1ab96c9-8a69-4675-a1d1-f8576a39cb00)
+
+# Protecting URL’s :-
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/64a1348b-eb85-4db0-9900-e3bfcf718ed0)
+
+## Middleware
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/aee66803-1834-4717-b7bb-ebc269521d80)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/895f3760-02b1-4142-9ba9-7e8350a5436f)
+### console will execute only if add-task is fire-up
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/21fb91d9-f3c1-45c3-920b-0bf83b4c2073)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/4af21a90-ee32-4b10-b7a8-40928dd08acf)
+
+
+
+
+
+
+
 
 
 
