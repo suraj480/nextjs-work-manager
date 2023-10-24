@@ -4,7 +4,9 @@ import loginpage from "../../assets/loginpage.svg";
 import Image from "next/image";
 import { toast } from "react-toastify";
 import { login } from "@/services/userService";
+import { useRouter } from "next/navigation";
 const LoginPage = () => {
+  const router = useRouter();
   const [loginData, setLoginData] = useState({
     email: "",
     password: "",
@@ -29,11 +31,19 @@ const LoginPage = () => {
     try {
       const result = await login(loginData);
       console.log("RESULT", result);
-      toast.success("LoginIn successful", {
-        position: "top-center",
-      });
+      
+      if (result.message === "Successfully logedIn") {
+        toast.success(result.message, {
+          position: "top-center",
+        });
+        router.push("/profile/user");
+      }else{
+        toast.warning(result.message, {
+          position: "top-center",
+        });
+      }
     } catch (error) {
-      toast.error("Error in Login", {
+      toast.error(error.response.data.message, {
         position: "top-center",
       });
     }
