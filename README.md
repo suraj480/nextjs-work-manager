@@ -92,6 +92,62 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/6516e61d-7dde-4c1e-9473-945f97216ee5)
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/7aeeb558-c8a8-480b-916e-bf4265df671d)
 
+### User service 
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/46f006e3-17e6-40db-9c76-93b03cfb7fce)
+
+### Bcrypt password
+#### npm i bcryptjs
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/f97613f2-4e82-4c96-a3e0-e271d7ed47c6)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/7a7be7a5-aa0d-4233-80b6-a6dd1683adb5)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/10fdc63c-dcf0-4352-beb8-21ab5302f97e)
+
+## Login API
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/a2d46176-6051-4258-96c3-eae2cd066e39)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/6773121e-4c5f-495c-bddc-fdea2680b994)
+
+### Creating Login API
+#### 1.Get user from email 
+#### 2.Match email and password Login API
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/7f075cb3-1335-48f7-bd08-69cedfa2f183)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/4cb2a69b-d951-407b-8b8a-2f7d1eca54ab)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/e79a85aa-1dbf-4240-a97d-2613ec04a271)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/a5adce84-0342-4657-b343-dadef093ca33)
+
+#### 3.Creating tokenset cookies api
+#### 4.JWT set cookies
+#### npm i jsonwebtoken
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/d4d51378-72f5-41a0-91a6-b30d0a626c12)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/4fb11077-01a5-4e01-954b-5ebe9b3c00aa)
+
+## Login Api frontend integreation 
+#### Steps:- 1.create login service
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/9e2a8f98-fb8e-4799-a10a-5792196fba8f)
+
+#### 2.call login service in component
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/11154c04-4cdf-4070-9dab-bd4c121c9ea6)
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/d751a995-db01-4bfa-a074-4292575ac4a3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
