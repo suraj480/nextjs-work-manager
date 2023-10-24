@@ -140,6 +140,27 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/21fb91d9-f3c1-45c3-920b-0bf83b4c2073)
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/4af21a90-ee32-4b10-b7a8-40928dd08acf)
 
+# Context API to store user Data
+
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/ff2b0538-5b71-4ed3-9b7e-e8269466f327)
+
+## create userProvider
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/da5bd141-2e23-4237-986e-7d2dfee4d9d6)
+
+## create userContext
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/17c6bfd2-8ab0-404d-8362-66e377d64522)
+
+## Create userService 
+### use userContext in CustomNavbar.jsx
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/b8368bac-9b49-46d1-9cc8-e6f58a389dbe)
+
+## wrap main layout.js with UserProvider
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/2ec5e507-0d38-46d2-9134-1d21a5c20d58)
+
+
+
+
+
 
 
 
