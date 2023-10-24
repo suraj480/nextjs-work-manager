@@ -1,12 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import loginpage from "../../assets/loginpage.svg";
 import Image from "next/image";
 import { toast } from "react-toastify";
 import { login } from "@/services/userService";
 import { useRouter } from "next/navigation";
+import UserContext from "@/context/userContext";
 const LoginPage = () => {
   const router = useRouter();
+  const userContext = useContext(UserContext);
   const [loginData, setLoginData] = useState({
     email: "",
     password: "",
@@ -31,13 +33,14 @@ const LoginPage = () => {
     try {
       const result = await login(loginData);
       console.log("RESULT", result);
-      
+
       if (result.message === "Successfully logedIn") {
         toast.success(result.message, {
           position: "top-center",
         });
+        userContext.setUser(result.user);
         router.push("/profile/user");
-      }else{
+      } else {
         toast.warning(result.message, {
           position: "top-center",
         });

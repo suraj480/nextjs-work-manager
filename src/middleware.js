@@ -5,7 +5,10 @@ import { NextRequest } from "next/server";
 export function middleware(request) {
   console.log("middleware executed");
   const authToken = request.cookies.get("authToken")?.value;
-  if(request.nextUrl.pathname==="/api/login"){
+  if (
+    request.nextUrl.pathname === "/api/login" ||
+    request.nextUrl.pathname === "/api/users"
+  ) {
     return;
   }
   //if user is logged in dont go to login and signup page
@@ -22,6 +25,18 @@ export function middleware(request) {
   } else {
     //accessing secured route
     if (!authToken) {
+      if (request.nextUrl.pathname.startsWith("/api")) {
+        return NextResponse.json(
+          {
+            message: "Access Denied !!",
+            success: true,
+          },
+          {
+            status: 401,
+          }
+        );
+      }
+
       return NextResponse.redirect(new URL("/login", request.url));
     }
   }

@@ -26,7 +26,12 @@ export async function POST(request) {
         );
         //4.create nextresponse -- cookie
         console.log("TOKEN", token);
-        const response = getResponseMessage("Successfully logedIn", 201, true);
+        const response = getResponseMessage(
+          "Successfully logedIn",
+          201,
+          true,
+          user
+        );
         response.cookies.set("authToken", token, {
           expiresIn: "1d",
           //if you want to check from postman make httpOnly false

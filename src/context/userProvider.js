@@ -15,7 +15,7 @@ const UserProvider = ({ children }) => {
         console.log(user);
       } catch (error) {
         console.log(error);
-        toast.error("error in laoding user");
+        // toast.error("error in laoding user");
         setUser(undefined);
       }
     }

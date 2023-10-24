@@ -1,10 +1,26 @@
 "use client";
 import UserContext from "@/context/userContext";
+import { logout } from "@/services/userService";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useContext } from "react";
+import { toast } from "react-toastify";
 const CustomNavbar = () => {
   const userContext = useContext(UserContext);
+  const router = useRouter();
   console.log("userContext", userContext);
+  async function doLogout() {
+    try {
+      const result = await logout();
+      console.log(result);
+      userContext.setUser(undefined);
+      toast.success("Logout successful !!");
+      router.push("/");
+    } catch (error) {
+      console.log(error);
+      toast.error("Logout error !!");
+    }
+  }
   return (
     <nav className="bg-orange-100 h-16 py-2 px-4 flex justify-between items-center">
       <div className="brand">
@@ -39,20 +55,24 @@ const CustomNavbar = () => {
       </div>
       <div>
         <ul className="flex space-x-3">
-          {!userContext.user && (
+          {!userContext.user ? (
             <>
-              <Link href={"/login"}>Login</Link>
-              <Link href={"/signup"}>Sign-Up</Link>
+              <li>
+                <Link href={"/login"}>Login</Link>
+              </li>
+              <li>
+                <Link href={"/signup"}>Sign-Up</Link>
+              </li>
             </>
-          )}
+          ) : null}
           {userContext.user && (
             <>
               <li>
                 {" "}
-                <Link href={"#!"}>{userContext.user.name}</Link>
+                <div>{userContext.user.name}</div>
               </li>
               <li>
-                <Link href={"#!"}>Logout</Link>
+                <button onClick={doLogout}>Logout</button>
               </li>
             </>
           )}
