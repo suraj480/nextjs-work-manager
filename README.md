@@ -173,6 +173,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## To display user name after logged 
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/1d3cbb92-cbdd-4c36-9367-b2a2f3505a9d)
 
+##  Fethced loggedIn userId
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/b9eac782-b699-4b8c-a89a-9d757bec855f)
+
+
 
 
 
