@@ -176,6 +176,22 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ##  Fethced loggedIn userId
 ![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/b9eac782-b699-4b8c-a89a-9d757bec855f)
 
+##  Fethced loggedIn userId
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/0ca36081-53f9-4e2c-97b7-1add432bac4f)
+
+# Delete functionality
+
+## 1. Create taskService.js
+
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/9bde02ca-e2b9-462e-a0cb-f7b5031845a2)
+
+## intergrate service in showTask.jsx
+
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/02c67c0e-cb02-43e5-aef8-1a1c09f16d0a)
+
+
+
+
 
 
 
