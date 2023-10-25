@@ -17,7 +17,7 @@ export async function GET(request) {
 }
 //create all the task
 export async function POST(request) {
-  const { title, content, userId } = await request.json();
+  const { title, content, userId, status } = await request.json();
   //fethced loggedIn userId
   const authToken = request.cookies.get("authToken")?.value;
 
@@ -28,6 +28,7 @@ export async function POST(request) {
       title,
       content,
       userId: data._id,
+      status,
     });
     const createdTask = await task.save();
     return NextResponse.json(createdTask, {
