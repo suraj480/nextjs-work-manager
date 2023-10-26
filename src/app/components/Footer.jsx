@@ -6,19 +6,19 @@ const Footer = () => {
       <div className="flex p-5 justify-around">
         <div className="text-center flex flex-col justify-center">
           <h1>Footer of work manager</h1>
-          <p>lorem ispum of work manager</p>
+          <p>Yor personalized work manager</p>
         </div>
         <div>
           <h1>Important Links</h1>
           <ul>
             <li>
-              <a>Tweteer</a>
+              <a href="https://twitter.com/surajmaurya991" target="_blank">Tweteer</a>
             </li>
             <li>
-              <a>GitHub</a>
+              <a href="https://github.com/suraj480" target="_blank">GitHub</a>
             </li>
             <li>
-              <a>LinkedIn</a>
+              <a href="https://www.linkedin.com/in/suraj-maurya/" target="_blank">LinkedIn</a>
             </li>
           </ul>
         </div>
