@@ -16,7 +16,7 @@ const TaskSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    enum: ["pending", "completed", "just_added"],
+    enum: ["pending", "completed", "just added"],
     default: "pending",
   },
   userId: {

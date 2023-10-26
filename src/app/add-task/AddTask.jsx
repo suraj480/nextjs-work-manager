@@ -115,7 +115,7 @@ const AddTask = () => {
               </option>
               <option value="pending">Pending</option>
               <option value="completed">Completed</option>
-              <option value="just_added">just added</option>
+              <option value="just added">just added</option>
             </select>
           </div>
           {/* button action */}

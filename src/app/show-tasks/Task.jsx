@@ -8,11 +8,23 @@ const Task = ({ task, deleteTaskParent }) => {
     // ....
     deleteTaskParent(taskId);
   }
+  const taskStatus = () => {
+  let  className = "";
+    if (task.status == "completed") {
+      className = "shadow-lg mt-2 rounded-md bg-green-800";
+    }
+    if (task.status == "pending") {
+      className = "shadow-lg mt-2 rounded-md bg-red-600";
+    }
+    if (task.status == "just added") {
+      className = "shadow-lg mt-2 rounded-md bg-yellow-400";
+    }
+    console.log("classNames",className)
+    return className;
+  };
   return (
     <div
-      className={`shadow-lg mt-2 rounded-md ${
-        task.status == "completed" ? "bg-green-800" : "bg-gray-400"
-      }`}
+      className={taskStatus()}
     >
       <div className="p-5">
         <div className="flex justify-between">
