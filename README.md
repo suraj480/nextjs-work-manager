@@ -1,3 +1,16 @@
+# Work Manager
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/05e74a62-b17e-4c35-b4f5-82b2be9c411c)
+
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/1cd78cc7-7797-4e1c-9fcf-433119d1ed12)
+
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/cf60b5eb-dc8b-4c21-9368-c766d5553561)
+
+![image](https://github.com/suraj480/nextjs-work-manager/assets/72219318/3c547dad-b560-4ff2-9086-2490e0a3e47c)
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
