@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import SvgImg from "../../assets/login.svg";
 import { addTask } from "@/services/taskService";
 import { toast } from "react-toastify";
-
+import { useDispatch } from "react-redux";
+import { addTaskAction } from "../redux/actions/actions";
 const AddTask = () => {
   const [task, setTask] = useState({
     title: "",
@@ -12,6 +13,7 @@ const AddTask = () => {
     status: "none",
     userId: "6533acb13fb8f5eb3f4df878",
   });
+  const disptach = useDispatch();
   console.log("TASK", task);
   const handleAddTask = async (event) => {
     event.preventDefault();
@@ -19,6 +21,7 @@ const AddTask = () => {
     try {
       const result = await addTask(task);
       console.log(result);
+      disptach(addTaskAction(result));
       toast.success("Your task is added !!", {
         position: "top-center",
       });

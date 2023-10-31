@@ -1,3 +1,4 @@
+"use client";
 import CustomNavbar from "./components/CustomNavbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -5,7 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/Footer";
 import { ToastContainer } from "react-toastify";
 import UserProvider from "@/context/userProvider";
-
+import store from "./redux/store/store";
+import { Provider } from "react-redux";
 const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata = {
@@ -17,14 +19,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <UserProvider>
-          <ToastContainer />
-          <CustomNavbar />
+        <Provider store={store}>
+          <UserProvider>
+            <ToastContainer />
+            <CustomNavbar />
 
-          <div className="mt-2">{children}</div>
+            <div className="mt-2">{children}</div>
 
-          <Footer />
-        </UserProvider>
+            <Footer />
+          </UserProvider>
+        </Provider>
       </body>
     </html>
   );
